@@ -1,6 +1,6 @@
 url: https://y7kim.github.io
 baseurl: /agency-jekyll-theme/
-
+theme: jekyll-theme-cayman
 # Site settings
 title: Awesome Title
 email: your-email@domain.com

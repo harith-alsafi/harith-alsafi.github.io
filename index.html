@@ -62,15 +62,32 @@
               <div class="intro--options">
                 <a href="#0">
                   <h3>About me</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do.</p>
+                  <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do.</p> -->
+                  <script>  
+                    var dob = new Date("03/06/2001");  
+                    //calculate month difference from current date in time  
+                    var month_diff = Date.now() - dob.getTime();  
+                      
+                    //convert the calculated difference in date format  
+                    var age_dt = new Date(month_diff);   
+                      
+                    //extract year from date      
+                    var year = age_dt.getUTCFullYear();  
+                      
+                    //now calculate the age of the user  
+                    var age = Math.abs(year - 1970);  
+                      
+                    //display the calculated age  
+                    document.write("My name is harith and am " + age + " years old. I am an engineer with an enthusiasm towards programming");  
+                </script> 
                 </a>
                 <a href="#0">
                   <h3>Hobbies</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do.</p>
+                  <p>I consider myself as a fitness advocate, as I have a certificate in personal training</p>
                 </a>
                 <a href="#0">
                   <h3>Other intrests</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do.</p>
+                  <p>I am interested in the future of artificial intelligence and its aplicability in IoT</p>
                 </a>
               </div>
             </div>

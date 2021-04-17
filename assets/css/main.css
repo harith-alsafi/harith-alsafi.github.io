@@ -1089,7 +1089,7 @@ body {
 .about--banner::before {
     content: "";
     position: absolute;
-    top: 20px;
+    top: 100px;
     left: 200px;
     -webkit-transform: rotate(-25deg);
     transform: rotate(-25deg);
@@ -1101,8 +1101,8 @@ body {
 .about--banner::after {
     content: "";
     position: absolute;
-    top: 75px;
-    left: 400px;
+    top: 150px;
+    left: 300px;
     -webkit-transform: rotate(45deg);
     transform: rotate(45deg);
     width: 10px;
@@ -1169,6 +1169,7 @@ body {
 }
 
 .about--options {
+
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -1179,35 +1180,50 @@ body {
     -ms-flex-pack: justify;
     justify-content: space-between;
     margin: 0;
-    padding: 0;
+    padding: 0.5em;
     list-style: none
 }
 
 .about--options>a {
-    position: relative;
-    left:  25%;
-    right: 25%;
-    bottom: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    padding: 0 20px;
+    line-height: 30px;
+
+    /* position: relative;
+    left:  23vh;
+    right: 27vh;
+    bottom: 150%; */
+
     width: 160px;
-    height: 140px;
+    height: 160px;
     text-decoration: none;
     color: #fff;
-    border: 1px solid #0f33ff;
+    /* border-radius: 60%; */
+
+    /* border: 1px solid #0f33ff; */
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat
 }
 
 .about--options>a:nth-child(1) {
-    background-image: url("../img/about-winners.jpg")
+    background-image: url("../img/about-winners.jpg");
+    position: absolute;
+    left: 20%;
 }
 
 .about--options>a:nth-child(2) {
-    background-image: url("../img/about-philosophy.jpg")
+    background-image: url("../img/about-philosophy.jpg");
 }
 
 .about--options>a:nth-child(3) {
-    background-image: url("../img/about-history.jpg")
+    background-image: url("../img/about-history.jpg");
+    position: absolute;
+    left: 80%;
 }
 
 
@@ -1219,7 +1235,7 @@ body {
 .about--options h3 {
     position: absolute;
     bottom: -38px;
-    left: 10px;
+    left: 45px;
     font-size: 16px;
     text-transform: captalize;
     -webkit-transition: bottom .2s ease-in-out, left .2s ease-in-out;

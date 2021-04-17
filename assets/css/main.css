@@ -1229,11 +1229,15 @@ body {
 
 
 .about--options>a:hover h3 {
-    bottom: -50px
+    bottom: -56px
 }
 
 .about--options>a:hover h4 {
-    bottom: -57px
+    bottom: -66px
+}
+
+.about--options>a:hover h5 {
+    bottom: -69px
 }
 
 .about--options h3 {
@@ -1250,6 +1254,17 @@ body {
 .about--options h4 {
     position: absolute;
     bottom: -45px;
+    left: 50px;
+    font-size: 16px;
+    text-transform: captalize;
+    text-align: center;
+    -webkit-transition: bottom .2s ease-in-out, left .2s ease-in-out;
+    transition: bottom .2s ease-in-out, left .2s ease-in-out
+}
+
+.about--options h5 {
+    position: absolute;
+    bottom: -52px;
     left: 50px;
     font-size: 16px;
     text-transform: captalize;
@@ -1288,6 +1303,11 @@ body {
 }
 
 @media (max-width: 600px) {
+    .about--banner h1 {
+        position: absolute;
+        top: -380px;
+        left: 33%;
+    }
     .about--banner {
         height: auto
     }
@@ -1303,7 +1323,7 @@ body {
     }
     .about--banner h2::before {
         top: 43px;
-        left: 214px
+        left: 290px
     }
     .about--banner h2::after {
         top: 205px;
@@ -1312,9 +1332,26 @@ body {
     .about--banner img {
         display: none
     }
-    .about--options {
-        display: none
+    .about--options>a:nth-child(1) {
+        background-image: url("../img/about-winners.jpg");
+        position: absolute;
+        left: 50%;
+        top: 22%;
     }
+    .about--options>a:nth-child(2) {
+        background-image: url("../img/about-philosophy.jpg");
+        position: absolute;
+        left: 50%;
+        top: 52%;
+    }
+
+    .about--options>a:nth-child(3) {
+        background-image: url("../img/about-history.jpg");
+        position: absolute;
+        left: 50%;
+        top: 82%;
+    }
+    
 }
 
 .contact {

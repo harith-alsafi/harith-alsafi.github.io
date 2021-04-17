@@ -63,6 +63,7 @@
                 <a href="#0">
                   <h3>About me</h3>
                   <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do.</p> -->
+                  <p id = "test"></p> 
                   <script>  
                     var dob = new Date("03/06/2001");  
                     //calculate month difference from current date in time  
@@ -77,8 +78,10 @@
                     //now calculate the age of the user  
                     var age = Math.abs(year - 1970);  
                       
+                    theDiv = document.getElementById("test");
+                    stringtext = "My name is harith and am " + age + " years old. I am an engineer with an enthusiasm towards programming";
+                    theDiv.appendChild(document.createTextNode(stringtext));
                     //display the calculated age  
-                    document.write("My name is harith and am " + age + " years old. I am an engineer with an enthusiasm towards programming");  
                 </script> 
                 </a>
                 <a href="#0">

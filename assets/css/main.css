@@ -675,7 +675,7 @@ body {
 
 .intro--banner {
     position: relative;
-    height: 475px
+    height: 300px
 }
 
 .intro--banner::before {
@@ -802,8 +802,9 @@ body {
 }
 
 @media (max-width: 767px) {
+
     .intro--banner {
-        height: 305px
+        height: 50%
     }
     .intro--banner h1 {
         font-size: 44px
@@ -825,8 +826,31 @@ body {
 }
 
 @media (max-width: 600px) {
+    .intro--banner::before {
+        content: "";
+        position: absolute;
+        top: 60%;
+        bottom: 20px;
+        left: -15px;
+        right: 0;
+        height: 2px;
+        background-color: #282828
+    }
+    
+    .intro--banner::after {
+        content: "";
+        position: absolute;
+        bottom: 18px;
+        top: 60%;
+
+        left: 0;
+        width: 30px;
+        height: 4px;
+        background-color: #0f33ff
+    }
     .intro--banner {
-        height: 360px
+        position: relative;
+        height: 45%;
     }
     .intro--banner h1 {
         font-size: 55px
@@ -1303,6 +1327,7 @@ body {
 }
 
 @media (max-width: 600px) {
+
     .about--banner h1 {
         position: absolute;
         margin-top: -98%;

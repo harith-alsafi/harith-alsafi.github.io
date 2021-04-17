@@ -1312,7 +1312,7 @@ body {
         height: auto
     }
     .about--banner::before {
-        left: 155px
+        left: 20px
     }
     .about--banner::after {
         left: 310px
@@ -1323,7 +1323,7 @@ body {
     }
     .about--banner h2::before {
         top: 43px;
-        left: 290px
+        left: 214px
     }
     .about--banner h2::after {
         top: 205px;

@@ -1359,8 +1359,8 @@ body {
 
     .about--banner h1 {
         position: absolute;
-        margin-top: -94%;
-        margin-left: 35%;
+        bottom: 300px;
+        left: 35%;
     }
     .about--banner {
         height: auto
@@ -1390,20 +1390,20 @@ body {
         background-image: url("../img/about-winners.jpg");
         position: absolute;
         left: 50%;
-        top: 20%;
+        top: 165px;
     }
     .about--options>a:nth-child(2) {
         background-image: url("../img/about-philosophy.jpg");
         position: absolute;
         left: 50%;
-        top: 47%;
+        top: 380px;
     }
 
     .about--options>a:nth-child(3) {
         background-image: url("../img/about-history.jpg");
         position: absolute;
         left: 50%;
-        top: 77%;
+        top: 600px;
     }
     
 }

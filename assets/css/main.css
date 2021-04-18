@@ -1359,8 +1359,8 @@ body {
 
     .about--banner h1 {
         position: absolute;
-        bottom: 300px;
-        left: 35%;
+        top: -540px;
+        left: 36%;
     }
     .about--banner {
         height: auto
